@@ -1,0 +1,41 @@
+<div class="center">
+    <mat-label>{{title}}</mat-label>
+</div>
+<div>
+    <button mat-raised-button color="primary" (click)="back()"><span class="material-icons">
+        reply
+    </span>Back</button>
+</div>    
+<!-- display count of candidate with distinct department   -->
+<table>
+    <tr>
+    <th>Department</th>
+    <th>count</th>
+    </tr>
+    <tr *ngFor="let v of temp" class="center">
+        <td>{{v.department}}</td>
+        <td>{{v.count}}</td>
+    </tr>
+</table>
+
+<!-- display data experience more than 2 years -->
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+<ng-container matColumnDef="id"> -->
+    <th mat-header-cell *matHeaderCellDef> id. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+</ng-container>
+<ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> name. </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+</ng-container>
+<ng-container matColumnDef="department">
+    <th mat-header-cell *matHeaderCellDef> department. </th>
+    <td mat-cell *matCellDef="let element"> {{element.department}} </td>
+</ng-container>
+<ng-container matColumnDef="joining_date">
+    <th mat-header-cell *matHeaderCellDef  mat-sort-header> joining_date. </th>
+    <td mat-cell *matCellDef="let element"> {{element.joining_date | date}} </td>
+</ng-container>
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
