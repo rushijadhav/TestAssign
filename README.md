@@ -1,8 +1,10 @@
 # Test
 # Visual studio code
-  clone/pull this repository/project -> npm install to generate node_modules folder -> ng serve -> localhost:4200
+  clone/pull this repository/project -> after clone/pull project ->in terminal -> npm install to generate node_modules folder -> ng serve -> localhost:4200
+  
   OR
-  pull project from github -> In vs code click extension symbol to add extension git pull -> in setting open command palette -> in search   type -> git clone -> past this  https://github.com/rushijadhav/TestAssign -> open this project direct or add in vs code
+  
+  clone/pull project from github -> In vs code click extension symbol to add extension git pull -> in setting open command palette -> in     search   type -> git clone -> past this  https://github.com/rushijadhav/TestAssign -> open this project direct or add in vs code
   open terminal and run command npm install for generate node_modules folder -> ng serve -> localhost:4200
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
